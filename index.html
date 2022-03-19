@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
-    <script src="js/script.js" defer></script>
-    <title>Interactive rating component challenge hub</title>
-  </head>
-  <body>
-    <main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
+  <script src="js/script.js" defer></script>
+  <title>Interactive rating component challenge hub</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
       <div class="main--stars">
         <img src="images/icon-star.svg" alt="header star" class="header_star">
         <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!</p>
         <div class="rating_box">
-          <img class="star" src="images/icon-star.svg" alt="star1" id="star1">
-          <img class="star" src="images/icon-star.svg" alt="star2" id="star2">
-          <img class="star" src="images/icon-star.svg" alt="star3" id="star3">
-          <img class="star" src="images/icon-star.svg" alt="star4" id="star4">
-          <img class="star" src="images/icon-star.svg" alt="star5" id="star5">
+          <div class="rate" id="rate1"><span class="rate_number">1</span></div>
+          <div class="rate" id="rate2"><span class="rate_number">2</span></div>
+          <div class="rate" id="rate3"><span class="rate_number">3</span></div>
+          <div class="rate" id="rate4"><span class="rate_number">4</span></div>
+          <div class="rate" id="rate5"><span class="rate_number">5</span></div>
         </div>
-        <button>Submit</button>
+        <button class="button">Submit</button>
       </div>
       <div class="main--thanks">
-        <img src="images/illustration-thank-you.svg" alt="thank you">
-        <p>You selected 5 out of 5</p>
+        <img src="images/illustration-thank-you.svg" alt="thank you" class="thanks_img">
+        <p class="rate_result">You selected 5 out of 5</p>
         <h1>Thank you!</h1>
-        <p>We appreciate you taking the time to give a rating. If you ever need more support,  don't hesitate to get in touch!</p>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+          touch!</p>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

@@ -3,3 +3,135 @@
 
 *, *::before, *::after {box-sizing: inherit;}
 html {box-sizing: border-box;}
+
+:root {
+  --cl-orange: hsl(25, 97%, 53%);
+  --cl-white: hsl(0, 0%, 100%);
+  --cl-light-gray: hsl(217, 12%, 63%);
+  --cl-medium-gray: hsl(216, 12%, 54%);
+  --cl-medium-blue: hsl(210, 16%, 20%);
+  --cl-dark-blue: hsl(213, 19%, 18%);
+  --cl-very-dark-blue: hsl(216, 12%, 8%);
+
+  --fs-default: 15px;
+
+  font: 400 var(--fs-default) 'Overpass';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--cl-very-dark-blue);
+  height: inherit;
+}
+
+h1 {
+  color: var(--cl-white);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--cl-light-gray);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.container {
+  background: var(--cl-dark-blue);
+  margin: 0 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 375px;
+}
+
+.header_star {
+  display: inline-block;
+  background: var(--cl-medium-blue);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+
+.rating_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--cl-light-gray);
+  background: var(--cl-medium-blue);
+  padding: 1rem;
+  border-radius: 10rem;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  transition: color .5s, background-color .5s;
+}
+
+.rate:hover {
+  cursor: pointer;
+  background: var(--cl-orange);
+  color: var(--cl-white);
+  transition: color .5s, background-color .5s;
+}
+
+.rate_number {
+  display: inline-block;
+}
+
+.button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: .75rem;
+  background: var(--cl-orange);
+  color: var(--cl-white);
+  font-weight: 700;
+  border: none;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  transition: color .5s, background-color .5s;
+}
+
+.button:hover {
+  background: var(--cl-white);
+  color: var(--cl-orange);
+  transition: color .5s, background-color .5s;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.main--thanks {
+  display: none;
+}
+
+.main--thanks {
+  text-align: center;
+}
+
+.thanks_img {
+  display: inline-block;
+}
+
+.rate_result {
+  margin: 1rem 0 2rem;
+  border-radius: 10rem;
+  padding: .3rem 1rem;
+  display: inline-block;
+  background: var(--cl-medium-blue);
+  color: var(--cl-orange);
+}
