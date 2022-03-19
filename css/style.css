@@ -87,6 +87,11 @@ main {
   transition: color .5s, background-color .5s;
 }
 
+.rate_choose {
+  background: var(--cl-medium-gray);
+  color: var(--cl-white);
+}
+
 .rate_number {
   display: inline-block;
 }
